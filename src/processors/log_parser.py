@@ -2,9 +2,6 @@ import re
 
 class LogParser:
     def parse_logs(self, logs):
-        """
-        Parsează o listă de loguri într-un format structurat (listă de dicționare).
-        """
         parsed_logs = []
         log_pattern = r'"reqId":"([^"]+)".*?"level":(\d+).*?"time":"([^"]+)".*?"message":"([^"]+)"'
         
