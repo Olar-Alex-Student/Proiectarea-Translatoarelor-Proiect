@@ -8,7 +8,7 @@ def display_menu():
     print("\nSelectează opțiunea dorită:")
     print("1. Extrage toate reqId-urile din loguri")
     print("2. Extrage toate nivelurile (level)")
-    print("3. Extrage toate mesajele")
+    print("3. Extrage toate data")
     print("4. Extrage toate adresele IP (remoteAddr)")
     print("5. Extrage toate userAgent-urile")
     print("6. Extrage toate URL-urile")
@@ -41,8 +41,8 @@ def main():
                     print(f"{idx}. Level {level[0]}")
 
         elif choice == "3":
-            print("\nExtragem mesajele:")
-            message_pattern = r'"message":"([^"]+)"'
+            print("\nExtragem data:")
+            message_pattern = r'\b\d{4}-\d{2}-\d{2}\b'
             messages = [extract_with_regex(message_pattern, log) for log in logs]
             for idx, message in enumerate(messages, start=1):
                 if message:
