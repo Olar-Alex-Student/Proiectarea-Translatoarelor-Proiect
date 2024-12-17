@@ -76,54 +76,6 @@ python main.py
 
 ---
 
-## Instrucțiuni de Utilizare
-
-După rularea comenzii, aplicația va afișa un meniu interactiv cu următoarele opțiuni:
-
-### Exemple de Opțiuni:
-
-1. **Filtrare după nivelul de log (`level`):**  
-   Introduceți opțiunea `1` pentru a căuta toate intrările cu un anumit nivel de severitate.  
-   Exemplu:
-   ```plaintext
-   Alegeți opțiunea: 1
-   Introduceți nivelul de log (1, 2, 3): 2
-   Rezultate:
-   {"reqId":"z4rlVEo3pYPBbRcxjg1K","level":2,"time":"2024-12-11T02:21:46+00:00","remoteAddr":"5.14.162.225","message":"Login failed: Lorand (Remote IP: 5.14.162.225)"}
-   ```
-
-2. **Extrage toate adresele IP (`remoteAddr`):**  
-   Introduceți opțiunea `2` pentru a lista toate adresele IP din fișierele de log.  
-   Exemplu:
-   ```plaintext
-   Alegeți opțiunea: 2
-   Rezultate:
-   - 192.168.100.49
-   - 5.14.162.225
-   ```
-
-3. **Filtrare după mesaj (`message`):**  
-   Introduceți opțiunea `3` pentru a căuta un cuvânt sau o expresie specifică în mesajele din log-uri.  
-   Exemplu:
-   ```plaintext
-   Alegeți opțiunea: 3
-   Introduceți cuvântul/expresia: failed
-   Rezultate:
-   {"reqId":"z4rlVEo3pYPBbRcxjg1K","level":2,"time":"2024-12-11T02:21:46+00:00","remoteAddr":"5.14.162.225","message":"Login failed: Lorand (Remote IP: 5.14.162.225)"}
-   ```
-
-4. **Filtrare după URL accesat (`url`):**  
-   Introduceți opțiunea `4` pentru a lista toate URL-urile.  
-   Exemplu:
-   ```plaintext
-   Alegeți opțiunea: 4
-   Rezultate:
-   - /settings/apps/enable
-   - /login
-   ```
-
----
-
 ## Bonus: Edge Cases
 
 Aplicația tratează următoarele edge cases:  
