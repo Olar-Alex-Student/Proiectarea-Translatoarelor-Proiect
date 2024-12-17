@@ -1,5 +1,4 @@
 from utils.file_utils import read_file
-from processors.log_parser import LogParser
 from utils.regex_utils import extract_with_regex
 from config import LOG_FILE
 
@@ -20,8 +19,6 @@ def display_menu():
 
 def main():
     logs = read_file(LOG_FILE)
-    parser = LogParser()
-    parsed_logs = parser.parse_logs(logs)
 
     while True:
         display_menu()
