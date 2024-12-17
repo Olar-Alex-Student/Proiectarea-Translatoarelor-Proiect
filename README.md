@@ -61,20 +61,14 @@ git clone https://github.com/utilizator/Proiect-Translatoare.git
 cd Proiect-Translatoare
 ```
 
-### 3. Instalarea Dependențelor
-Proiectul folosește câteva librării Python, definite în `requirements.txt`. Instalează-le cu:
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Structura Fișierelor de Log
+### 3. Structura Fișierelor de Log
 Creează sau încarcă fișierele de log în folderul `logs/`. Exemplu de fișier de log valid:
 ```json
 {"reqId":"96LuQQeekORu1qdgtsoG","level":3,"time":"2024-12-11T01:49:08+00:00","remoteAddr":"192.168.100.49","message":"could not enable apps"}
 {"reqId":"z4rlVEo3pYPBbRcxjg1K","level":2,"time":"2024-12-11T02:21:46+00:00","remoteAddr":"5.14.162.225","message":"Login failed: Lorand (Remote IP: 5.14.162.225)"}
 ```
 
-### 5. Rularea Aplicației
+### 4. Rularea Aplicației
 Accesează directorul `src/` și rulează programul principal:
 ```bash
 python main.py
