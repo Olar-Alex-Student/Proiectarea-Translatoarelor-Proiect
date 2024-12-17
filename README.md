@@ -1,6 +1,3 @@
-Iată varianta completă, inclusiv pașii de instalare și exemplele, în format markdown:  
-
-```markdown
 # Proiectarea-Translatoarelor-Proiect
 
 ## Proiect: Programarea Translatoarelor
@@ -145,4 +142,3 @@ Aplicația tratează următoarele edge cases:
 ## Licență
 
 Proiectul este public și poate fi utilizat pentru scopuri educaționale.
-```
